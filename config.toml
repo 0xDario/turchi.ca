@@ -1,4 +1,4 @@
-baseURL = "https://turchi.ca"
+baseURL = "https://github.com/0xDario/turchi.ca/"
 title = "Dario Turchi"
 theme = "hugo-coder"
 languageCode = "en"
