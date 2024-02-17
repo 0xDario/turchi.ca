@@ -1,0 +1,117 @@
+body {
+    background-color: #f0f2f5; /* Light grey background */
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark grey text */
+    margin: 0;
+    padding: 20px;
+}
+
+.project-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: calc(33% - 40px); /* Three cards per row, with adjustment for margin */
+    height: 300px; /* Fixed height */
+    margin: 20px; /* Space between cards */
+    background-color: #fff; /* White card background */
+    border-radius: 10px; /* Rounded corners for the cards */
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden; /* Ensures content does not overflow the card */
+}
+
+.project-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4); /* Enhanced hover effect */
+}
+
+.container {
+    padding: 16px;
+    height: calc(100% - 32px); /* Adjust container height to fit within card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space content evenly */
+}
+
+.container h4, .container p {
+    margin: 0; /* Remove default margins */
+}
+
+.container a {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap's link color for consistency */
+}
+
+.container a:hover {
+    text-decoration: underline; /* Highlight on hover */
+}
+
+.fa-github { /* GitHub icon styling */
+    margin-left: 5px;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    color: #000; /* Default icon color */
+    font-size: 2rem; /* Increase icon size */
+    margin-right: 15px; /* Space between icons */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.contact-icons a:hover, .contact-icons a:focus {
+    color: #0056b3; /* Color when hovering or focused */
+    cursor: pointer;
+}
+
+/* Specific brand colors for each icon */
+.contact-icons a[href^="mailto:"] i { color: #d14836; } /* Email color */
+.contact-icons a[href*="linkedin.com"] i { color: #0077b5; } /* LinkedIn color */
+.contact-icons a[href*="github.com"] i { color: #333; } /* GitHub color */
+
+#blog {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.blog-post:last-child {
+    border-bottom: none; /* No border for the last post */
+}
+
+.blog-post h3 {
+    margin: 0 0 10px 0;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 0 10px 0;
+}
+
+.blog-post a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 992px) {
+    .project-card {
+        width: calc(50% - 40px); /* Two cards per row on medium screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-card {
+        width: calc(100% - 40px); /* One card per row on small screens */
+    }
+}
