@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario Turchi - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="name-title">
+                    <h1 class="glitch-text" data-text="Dario Turchi">Dario Turchi</h1>
+                    <h2>Navigating Software &amp; Finance</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="hero">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="terminal-button"></span>
+                    <span class="terminal-button"></span>
+                    <span class="terminal-button"></span>
+                </div>
+                <div class="terminal-content">
+                    <div class="line">
+                        <span class="prompt">$</span>
+                        <span class="command" id="typing-text"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2><span class="bracket">{</span> About Me <span class="bracket">}</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Professional Summary</h3>
+                    <p>I am a dedicated Full Stack Software Developer with over five years of professional experience, specializing in building scalable and efficient applications. My core expertise lies in C#, Blazor/MAUI, and SQL within the .NET ecosystem. Beyond my primary tech stack, I have also worked with TypeScript, JavaScript, VBA, Backbone.js, Marionette.js, C, Java, and Python, gaining a broad understanding of various development paradigms across personal and academic projects.</p>
+                    
+                    <h3>Interests & Approach</h3>
+                    <p>Passionate about both Finance and Cybersecurity, I enjoy diving deep into complex problems and continuously expanding my skill set. I thrive in collaborative environments, where teamwork and innovation drive success. My problem-solving mindset and adaptability allow me to tackle challenging projects effectively.</p>
+                    
+                    <h3>Outside of Work</h3>
+                    <p>When I'm not coding, I enjoy playing guitar, gaming, traveling, and discovering new culinary experiences. I believe that a well-rounded life fuels creativity and enhances problem-solving in professional settings.</p>
+                </div>
+                <div class="skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">.NET</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Blazor</span>
+                        <span class="skill-tag">MAUI</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Backbone.js</span>
+                        <span class="skill-tag">Marionette.js</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2><span class="bracket">{</span> Projects <span class="bracket">}</span></h2>
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter=".net">.NET</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            <div class="repo-container" id="repo-container">
+                <!-- GitHub repos will be loaded here dynamically -->
+                <div class="loader" id="repo-loader">
+                    <div class="spinner"></div>
+                    <p>Loading repositories...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2><span class="bracket">{</span> Contact <span class="bracket">}</span></h2>
+            <div class="contact-content">
+                <p>Connect with me on LinkedIn or reach out via email.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/0xDario" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:darioturchi@outlook.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://github.com/0xDario" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://turchi.ca" target="_blank" class="social-link">
+                        <i class="fas fa-globe"></i>
+                        <span>Website</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Dario Turchi. Built with <span class="heart">❤</span> and pure HTML, CSS & JavaScript.</p>
+    </footer>
+</body>
+</html>
