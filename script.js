@@ -100,6 +100,12 @@ async function loadGitHubRepos() {
                 } else if (repo.language.toLowerCase().includes('javascript') || 
                          repo.language.toLowerCase().includes('typescript')) {
                     repoLanguageClass = 'javascript';
+                } else if (repo.language.toLowerCase().includes('python')) {
+                    repoLanguageClass = 'python';
+                } else if (repo.language.toLowerCase().includes('batch')) {
+                    repoLanguageClass = 'batch';
+                } else if (repo.language.toLowerCase().includes('sql')) {
+                    repoLanguageClass = 'sql';
                 }
             }
             
