@@ -1,3 +1,19 @@
 {
-  "photos": []
+  "photos": [
+    {
+      "id": "20260714-1h9a0449.jpg",
+      "src": "photos/large/20260714-1h9a0449.jpg",
+      "thumb": "photos/thumbs/20260714-1h9a0449.jpg",
+      "width": 2048,
+      "height": 1365,
+      "camera": "Canon EOS R7",
+      "cameraKey": "r7",
+      "date": "2026-07-14",
+      "lens": "17-40mm F1.8 DC | Art 025",
+      "focalLength": "17mm",
+      "aperture": "f/1.8",
+      "shutter": "1/80s",
+      "iso": "ISO 2000"
+    }
+  ]
 }
