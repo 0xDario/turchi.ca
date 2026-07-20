@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario Turchi - Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="photography.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="photography.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="name-title">
+                    <h1 class="glitch-text" data-text="Dario Turchi"><a href="index.html" class="home-link">Dario Turchi</a></h1>
+                    <h2>Navigating Software &amp; Finance</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="photography.html" class="active">Photography</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="photography">
+            <h2><span class="bracket">{</span> Photography <span class="bracket">}</span></h2>
+            <p class="gallery-intro">Shot on a Canon EOS R7, an iPhone 16 Pro Max, and a Pentax K1000 on 35mm film.</p>
+
+            <div class="project-filter" id="camera-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="r7">Canon R7</button>
+                <button class="filter-btn" data-filter="iphone">iPhone</button>
+                <button class="filter-btn" data-filter="k1000">35mm Film</button>
+            </div>
+
+            <div class="gallery" id="gallery">
+                <div class="loader" id="gallery-loader">
+                    <div class="spinner"></div>
+                    <p>Loading photos...</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close photo viewer">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous photo">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next photo">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <figure class="lightbox-figure">
+            <img id="lightbox-image" src="" alt="">
+            <figcaption class="lightbox-meta">
+                <div class="lightbox-title" id="lightbox-title"></div>
+                <div class="lightbox-exif" id="lightbox-exif"></div>
+            </figcaption>
+        </figure>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Dario Turchi. Built with <span class="heart">❤</span> and pure HTML, CSS & JavaScript.</p>
+    </footer>
+</body>
+</html>

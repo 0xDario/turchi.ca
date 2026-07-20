@@ -471,8 +471,10 @@ footer {
     nav ul {
         justify-content: center;
         margin-top: 20px;
+        flex-wrap: wrap;
+        row-gap: 8px;
     }
-    
+
     nav ul li {
         margin: 0 10px;
     }
